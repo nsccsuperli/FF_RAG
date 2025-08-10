@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-# FF_RAG
-Bridging Domain Experts and Domain Knowledge via a Federated Learning Framework for Controlled Model Personalization
-
-FF-RAG is a novel architecture that integrates Federated Learning (FL), Parameter-Efficient Fine-Tuning (PEFT), and Retrieval-Augmented Generation (RAG) to tackle the challenges of applying large language models (LLMs) to domain-specific tasks while preserving data privacy. This repository provides the implementation of FF-RAG, including the foundational FF-LoRA method designed to integrate global and personalized features, improving model performance in domain-specific applications.
-
-## Overview
-As the use of large language models (LLMs) grows, applying them to domain-specific tasks (e.g., healthcare) faces challenges due to:
-- 🔒 Data privacy concerns
-- 🌐 Data heterogeneity across clients
-- 🔧 通用模型对领域任务的不理解以及领域模型存在幻觉
-- 🎯 生成器和检索器偏好不一致
-
-
-## ✨FF-RAG 特性
-- 🔄 We present **FF-LoRA**, which integrates personalized client features with global server-side information, alleviating client drift in FL framework.
-- 📈 We implement the fusion training of domain expert and knowledge provided by PEFT and RAG, respectively, within the Federated Learning framework.
-- 📊 By constructing domain-specific case and authoritative knowledge bases, we implement a **Dual-task Strategy** that optimizes the controlled and efficient application of LLMs for domain-specific tasks.
-
-
-## 🚀 快速开始
-=======
 # FF-RAG
 **Bridging Domain Experts and Domain Knowledge via a Federated Learning Framework for Controlled Model Personalization**
 
@@ -51,7 +29,6 @@ Applying general-purpose LLMs to domains such as healthcare is challenging due t
 ---
 
 ## 🚀 Quick Start
->>>>>>> 7f67600c194e86736af9d2b64e95b177bceddc0b
 The framework enables bidirectional consistency between domain models and retrieval systems, ensuring generated responses align with retrieved documents.
 
 ### Core Components
@@ -101,16 +78,9 @@ lm_eval --model_args pretrained=./FF-LoRA-llama7b-wiz-homo/,parallelize=True,loa
 -----
 
 ## Continue
-<<<<<<< HEAD
-我们展示了一部分核心代码，因为我们的论文正在投稿中，我们会在完成后进行更新
-
-## 🙏 Acknowledge
-=======
 We have shown a part of the core code. Because we applied the algorithm to the medical industry, some data and tasks were mixed. We will complete the update after desensitization.
 
 ## 🙏 Acknowledge
-We sincerely appreciate the contributions of the following methods
->>>>>>> 7f67600c194e86736af9d2b64e95b177bceddc0b
 - [PEFT](https://github.com/huggingface/peft) - FLoRA 
 
 
