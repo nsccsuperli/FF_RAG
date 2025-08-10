@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FF_RAG
 Bridging Domain Experts and Domain Knowledge via a Federated Learning Framework for Controlled Model Personalization
 
@@ -18,6 +19,39 @@ As the use of large language models (LLMs) grows, applying them to domain-specif
 
 
 ## 🚀 快速开始
+=======
+# FF-RAG
+**Bridging Domain Experts and Domain Knowledge via a Federated Learning Framework for Controlled Model Personalization**
+
+FF-RAG is a modular framework that combines **Federated Learning (FL)**, **Parameter-Efficient Fine-Tuning (PEFT)**, and **Retrieval-Augmented Generation (RAG)** to deploy large language models (LLMs) on domain-specific tasks **with privacy preservation and controllable personalization**.  
+This repository includes the core implementation, featuring **FF-LoRA**, a two-stage fusion method that blends global and client-specific features to mitigate client drift and improve domain performance.
+
+---
+
+## Overview
+Applying general-purpose LLMs to domains such as healthcare is challenging due to:
+- 🔒 **Privacy constraints** on sensitive data
+- 🌐 **Client heterogeneity** (non-IID data, resource disparity)
+- 🧠 **Domain hallucinations** from models lacking grounded domain knowledge
+- 🔁 **Retriever–Generator misalignment**, causing off-policy or inconsistent outputs
+
+**FF-RAG** addresses these by:
+- 🔄 **FF-LoRA**: Integrates client personalization with global knowledge in an FL loop, reducing client drift and preserving local preferences.
+- 🧩 **Dual-Boundary Knowledge**: Constructs **authoritative** and **case-based** knowledge sources to bound generation and curb hallucinations.
+- 🎯 **Retriever–Generator Agreement**: Encourages outputs that stay consistent with retrieved, domain-relevant evidence.
+
+---
+
+## ✨ Features
+- **Two-Stage Knowledge Fusion (FF-LoRA)**: Stackable adapters for global + client features.
+- **Dual Knowledge Bases**: Authoritative definitions + case dialogs/records to ground reasoning.
+- **Privacy-Preserving Training**: FL enables on-prem training without centralizing raw data.
+- **Pluggable RAG**: Works with your existing retriever/index and domain corpora.
+
+---
+
+## 🚀 Quick Start
+>>>>>>> 7f67600c194e86736af9d2b64e95b177bceddc0b
 The framework enables bidirectional consistency between domain models and retrieval systems, ensuring generated responses align with retrieved documents.
 
 ### Core Components
@@ -67,9 +101,16 @@ lm_eval --model_args pretrained=./FF-LoRA-llama7b-wiz-homo/,parallelize=True,loa
 -----
 
 ## Continue
+<<<<<<< HEAD
 我们展示了一部分核心代码，因为我们的论文正在投稿中，我们会在完成后进行更新
 
 ## 🙏 Acknowledge
+=======
+We have shown a part of the core code. Because we applied the algorithm to the medical industry, some data and tasks were mixed. We will complete the update after desensitization.
+
+## 🙏 Acknowledge
+We sincerely appreciate the contributions of the following methods
+>>>>>>> 7f67600c194e86736af9d2b64e95b177bceddc0b
 - [PEFT](https://github.com/huggingface/peft) - FLoRA 
 
 
